@@ -15,11 +15,18 @@ classDiagram
       Shape:+int getValueX()
       Shape:+int getValueY()
       class Circle {
-        -int r
-        +Circle()
-        +Circle(int, int, int)
+            -int r
+            +Circle()
+            +Circle(int, int, int)
+            +getRadio()
       }
-      class Rectangle {        
+      class Rectangle {   
+            -int alto
+            -int ancho
+            +Rectangle()
+            +Rectangle(int, int, int, int)
+            +getAlto()
+            +getAncho()
       }
       class Polygon {
       }
